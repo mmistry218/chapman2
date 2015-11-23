@@ -1,0 +1,26 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+.front, .page-bio, .page-book-product, .node-type-product-display, .page-cart {
+    background-image: url("../img/jchapman_background.jpg");
+}
+
+.page-book-product .row, .node-type-product-display .row, .page-cart .row {
+	background-color: #f9f9f9;
+	opacity: 0.9;
+	border-radius:4px;
+}
+
+#front_page_content {
+	 background-color: #000;
+ }
+
+.bioTxt {
+	 opacity:0.8;
+	 font-size:24px;
+	 color:#fff;
+	 background-color: #000;
+	 border-radius:4px;
+	 padding:19px;
+}
