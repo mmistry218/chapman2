@@ -2,14 +2,18 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
-.front, .page-bio, .page-book-product, .node-type-product-display, .page-cart {
+.front, .page-bio, .page-book-product, .node-type-product-display, .page-cart, .node-type-audio {
     background-image: url("../img/jchapman_background.jpg");
 }
 
-.page-book-product .row, .node-type-product-display .row, .page-cart .row {
+.page-book-product .row, .node-type-product-display .row, .page-cart .row, .node-type-audio .row {
 	background-color: #f9f9f9;
 	opacity: 0.9;
 	border-radius:4px;
+}
+
+.node-type-product-display #overview {
+	padding:19px;
 }
 
 #front_page_content {

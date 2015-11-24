@@ -95,44 +95,16 @@
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>
-  <?php
+
+  <div class="content"<?php print $content_attributes; ?>>
+    <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      $price = $content['product:commerce_price'][0]['#markup'];
-      $imageFile = $content['product:field_dog_picture']['#items'][0]['filename'];
-      $formAction = $content['field_product'][0]['#action'];
-      $formProductId = $content['field_product'][0]['product_id']['#value'];
-      $formID = $content['field_product'][0]['#form_id'];
-      $formBuildId = $content['field_product'][0]['form_build_id']['#value'];
-      //print var_dump($content['field_product'][0]);
+      print render($content);
     ?>
-      <div class="row well">
-    	<div class="col-md-6">
-    		<img src="http://localhost/chapman/sites/default/files/styles/medium/public/<?php print render($imageFile); ?>">
-    	</div>
-    	<div class="col-md-6">
-    		<h3><?php print $title; ?></h3>
-    		<h4>By: Q. Ulysses Chapman</h4>
-    		<h4>Price: <?php print render($price); ?></h4>
-    		<form class="commerce-add-to-cart commerce-cart-add-to-cart-form-1" action="<?php print render($formAction); ?>" method="post" id="commerce-cart-add-to-cart-form-1" accept-charset="UTF-8">
-    			<div>
-	    			<input name="product_id" value="<?php print render($formProductId); ?>" type="hidden">
-			<input name="form_build_id" value="<?php print render($formBuildId); ?>" type="hidden">
-			<input name="form_id" value="<?php print render($formID); ?>" type="hidden">
-					<input name="quantity" value="1" type="hidden">
-					<button class="btn btn-success form-submit" id="edit-submit" name="op" value="Add to cart" type="submit">Add to cart</button>
-				</div>
-			</form>
-    	</div>
-    </div>
-  <div class="content"<?php print $content_attributes; ?>>
-	  <div id="overview" class="row">
-	    <h3>Overview</h3>
-	    <p><?php print render($content['body']['#items'][0]['value'])?></p>
-	  </div>
   </div>
-
+  <script src="../sites/all/themes/bootstrap_subtheme/js/jsplayerCustom.js"></script>
   <?php print render($content['links']); ?>
 
   <?php print render($content['comments']); ?>
