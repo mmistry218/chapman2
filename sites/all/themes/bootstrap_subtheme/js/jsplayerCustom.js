@@ -4,7 +4,7 @@ jQuery( document ).ready(function() {
 		    jQuery('body').fadeTo('slow', 0.3, function()
 		    {
 		        jQuery(this).css('background-image', 'url("../sites/all/themes/bootstrap_subtheme/img/space.gif")');
-		     }).fadeTo('slow', 1);
+		     }).fadeTo('slow', 2);
 		  });
 	  });
 });

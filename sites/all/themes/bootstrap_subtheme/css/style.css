@@ -28,24 +28,21 @@
  
  .page-bio, .page-book-product, .node-type-product-display, .page-cart {
     background-image: url("../img/jchapman_background2.jpg");
-}
-
+	transition: background 0.9s linear;
+ }
 .page-book-product .row, .node-type-product-display .row, .page-cart .row, .node-type-audio .row {
 	background-color: #f9f9f9;
 	opacity: 0.9;
 	border-radius:4px;
 }
 
-
-#block-block-1 {
-	 opacity:0.8;
-	 color:#fff;
-	 background-color: #000;
-	 
-}
 .node-type-product-display #overview {
 	padding:19px;
 }
+
+#front_page_content {
+	 background-color: #000;
+ }
 
 .bioTxt {
 	 opacity:0.8;
@@ -56,5 +53,6 @@
 	 padding:19px;
 }
 
-#success_message{ display: none;}
-#fail_message{ display: none;}
+#featuredBook img {
+	width:100%;
+}

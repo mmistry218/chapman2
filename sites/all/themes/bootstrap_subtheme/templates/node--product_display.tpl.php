@@ -109,7 +109,7 @@
     ?>
       <div class="row well">
     	<div class="col-md-6">
-    		<img src="http://localhost/chapman/sites/default/files/styles/medium/public/<?php print render($imageFile); ?>">
+    		<img src="../sites/default/files/<?php print render($imageFile); ?>">
     	</div>
     	<div class="col-md-6">
     		<h3><?php print $title; ?></h3>
