@@ -24,11 +24,11 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	transition: background 0.9s linear;
 }
  
  .page-bio, .page-book-product, .node-type-product-display, .page-cart {
     background-image: url("../img/jchapman_background2.jpg");
-	transition: background 0.9s linear;
  }
 .page-book-product .row, .node-type-product-display .row, .page-cart .row, .node-type-audio .row {
 	background-color: #f9f9f9;
