@@ -44,6 +44,13 @@
 	 background-color: #000;
  }
 
+ #block-block-1 {
+ 	color: #FFF;
+ 	background-color: #000;
+ 	opacity: 0.9;
+ 	
+ }
+
 .bioTxt {
 	 opacity:0.8;
 	 font-size:24px;
@@ -56,3 +63,14 @@
 #featuredBook img {
 	width:100%;
 }
+
+.node-audio {
+	 height: 0%;
+     width: 32%;
+     opacity:0.9;
+ }
+
+ #success_message, #fail_message {
+ 	display: none;
+ }
+
