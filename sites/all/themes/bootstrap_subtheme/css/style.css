@@ -4,6 +4,7 @@
  */
 .front, .page-bio, .page-book-product, .node-type-product-display, .page-cart, .node-type-audio {
     background-image: url("../img/jchapman_background.jpg");
+    transition: background 0.9s linear;
 }
 
 .page-book-product .row, .node-type-product-display .row, .page-cart .row, .node-type-audio .row {
