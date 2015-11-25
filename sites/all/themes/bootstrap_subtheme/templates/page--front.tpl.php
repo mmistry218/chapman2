@@ -75,9 +75,7 @@
 ?>
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-563bc0a5710c55e8" async="async">
-
-</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-563bc0a5710c55e8" async="async"></script>
 
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
@@ -172,3 +170,7 @@
 <footer class="footer container">
   <?php print render($page['footer']); ?>
 </footer>
+
+<script src="/chapman2/sites/all/themes/bootstrap/js/jquery-1.11.3.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+<script src="/chapman2/sites/all/themes/bootstrap_subtheme/js/contact_form_validation.js"></script>

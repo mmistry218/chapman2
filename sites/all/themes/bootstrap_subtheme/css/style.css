@@ -2,7 +2,17 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
-.front, .page-bio, .page-book-product, .node-type-product-display, .page-cart {
+.front {
+    
+	background-image: url("../img/book_cover.jpg");    
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+ 
+ .page-bio, .page-book-product, .node-type-product-display, .page-cart {
     background-image: url("../img/jchapman_background.jpg");
 }
 
@@ -12,8 +22,12 @@
 	border-radius:4px;
 }
 
-#front_page_content {
+#block-block-1 {
+	 opacity:0.8;
+	 color:#fff;
 	 background-color: #000;
+	 border-radius:4px;
+	 padding:15px;
  }
 
 .bioTxt {
@@ -24,3 +38,5 @@
 	 border-radius:4px;
 	 padding:19px;
 }
+
+#success_message{ display: none;}
