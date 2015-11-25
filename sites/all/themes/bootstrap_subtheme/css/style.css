@@ -2,6 +2,7 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
+<<<<<<< HEAD
 .front {
     
 	background-image: url("../img/book_cover.jpg");    
@@ -16,19 +17,21 @@
     background-image: url("../img/jchapman_background.jpg");
 }
 
-.page-book-product .row, .node-type-product-display .row, .page-cart .row {
+.page-book-product .row, .node-type-product-display .row, .page-cart .row, .node-type-audio .row {
 	background-color: #f9f9f9;
 	opacity: 0.9;
 	border-radius:4px;
 }
 
+
 #block-block-1 {
 	 opacity:0.8;
 	 color:#fff;
-	 background-color: #000;
-	 border-radius:4px;
-	 padding:15px;
- }
+	 
+}
+.node-type-product-display #overview {
+	padding:19px;
+}
 
 .bioTxt {
 	 opacity:0.8;
