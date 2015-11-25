@@ -17,6 +17,14 @@
 	background-size: cover;
 	
 }
+
+.node-type-audio {
+	background-image: url("../img/spaceship-dashboard.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
  
  .page-bio, .page-book-product, .node-type-product-display, .page-cart {
     background-image: url("../img/jchapman_background2.jpg");
