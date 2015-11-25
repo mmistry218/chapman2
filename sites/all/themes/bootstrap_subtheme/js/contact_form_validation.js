@@ -1,6 +1,7 @@
-$(document).ready(function() {
-    $('#contact_form').bootstrapValidator({
+  jQuery(document).ready(function() {
+    jQuery('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+       
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
             invalid: 'glyphicon glyphicon-remove',
@@ -13,23 +14,10 @@ $(document).ready(function() {
                         min: 2,
                     },
                         notEmpty: {
-                        message: 'Please supply your full name'
+                        message: 'Please supply your name'
                     }
                 }
-            },
-			/*
-             last_name: {
-                validators: {
-                     stringLength: {
-                        min: 2,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your last name'
-                    }
-                }
-            },
-			*/
-			
+            },             
             email: {
                 validators: {
                     notEmpty: {
@@ -39,58 +27,7 @@ $(document).ready(function() {
                         message: 'Please supply a valid email address'
                     }
                 }
-            },
-			/*
-            phone: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your phone number'
-                    },
-                    phone: {
-                        country: 'US',
-                        message: 'Please supply a vaild phone number with area code'
-                    }
-                }
-            },
-            address: {
-                validators: {
-                     stringLength: {
-                        min: 8,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your street address'
-                    }
-                }
-            },
-            city: {
-                validators: {
-                     stringLength: {
-                        min: 4,
-                    },
-                    notEmpty: {
-                        message: 'Please supply your city'
-                    }
-                }
-            },
-            state: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please select your state'
-                    }
-                }
-            },
-            zip: {
-                validators: {
-                    notEmpty: {
-                        message: 'Please supply your zip code'
-                    },
-                    zipCode: {
-                        country: 'US',
-                        message: 'Please supply a vaild zip code'
-                    }
-                }
-            },
-			*/
+            }, 
             comment: {
                 validators: {
                       stringLength: {
@@ -99,30 +36,46 @@ $(document).ready(function() {
                         message:'Please enter at least 1 characters and no more than 300'
                     },
                     notEmpty: {
-                        message: 'Please supply a message.'
+                        message: 'Please enter a message'
                     }
                     }
                 }
             }
-        })
-        .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-                $('#contact_form').data('bootstrapValidator').resetForm();
+        });
 
-            /*
-			// Prevent form submission
-            e.preventDefault();
+         jQuery('#contact_form').submit(function(event){
+            if(!event.isDefaultPrevented())
+            { 
+                
+                var name = jQuery("#name").val();
+                var fromEmail = jQuery("#email").val();
+                var comment = jQuery("#comment").val();
+                
+                jQuery.ajax({
+                    type: "POST",
+                    url: "sites/all/themes/bootstrap_subtheme/js/contact_email.php",                    
+                    data: "name=" + name + "&email=" + fromEmail + "&message=" + comment,
+                    cache: false,
+                    success: function() {
+                        jQuery('#success_message').slideDown({ opacity: "show" }, "slow");
+                        jQuery('#contact_form').data('bootstrapValidator').resetForm();
 
-            // Get the form instance
-            var $form = $(e.target);
+                        //clear all fields
+                        jQuery('#contact_form').trigger("reset");
+                    },
+                    error: function() {
+                        jQuery('#fail_message').slideDown({ opacity: "show" }, "slow");
+                        jQuery('#contact_form').data('bootstrapValidator').resetForm();
 
-            // Get the BootstrapValidator instance
-            var bv = $form.data('bootstrapValidator');
+                        //clear all fields
+                        jQuery('#contact_form').trigger("reset");
+                    }
+                });
 
-            // Use Ajax to submit form data
-            $.post($form.attr('action'), $form.serialize(), function(result) {
-                console.log(result);
-            }, 'json');
-			*/
+                event.preventDefault();
+                                
+            }
+            
         });
 });
+

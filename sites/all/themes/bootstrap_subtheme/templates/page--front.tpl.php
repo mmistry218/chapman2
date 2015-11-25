@@ -171,6 +171,5 @@
   <?php print render($page['footer']); ?>
 </footer>
 
-<script src="/chapman2/sites/all/themes/bootstrap/js/jquery-1.11.3.min.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
 <script src="/chapman2/sites/all/themes/bootstrap_subtheme/js/contact_form_validation.js"></script>
