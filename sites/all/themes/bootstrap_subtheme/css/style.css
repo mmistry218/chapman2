@@ -10,12 +10,9 @@
 
 .front {
     
-	background-image: url("../img/book_cover.jpg");    
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	
+	background-image: url("../img/home_background.jpg");    	
+	background-size: 100%;
+	background-repeat: none
 }
 
 .node-type-audio {
