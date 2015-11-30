@@ -47,6 +47,27 @@
  	opacity: 0.9;
  	
  }
+ 
+ .featureContent {
+ 	border-top:1px solid #ddd;
+ 	padding:8px;
+ }
+ 
+ .featureContent img {
+ 	display:block;
+    margin:auto;
+    padding-top:15%;
+ }
+ 
+ .playOverlay {
+ 	background: transparent url("../img/play.png") no-repeat scroll center center / cover;
+    bottom: 8%;
+    left:32%;
+    display: block;
+    height: 42%;
+    position: absolute;
+    width: 36%;
+ }
 
 .bioTxt {
 	 opacity:0.8;
