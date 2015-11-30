@@ -1,50 +1,33 @@
 <div>
-	<div class="col-md-4">
-		<h2>&nbsp;About The Book</h2>
+<div class="col-md-4">
+<h2>&nbsp;About The Book</h2>
 
-		<div>
-			<table class="table" id="featuredBook">
-				<tbody>
-					<tr>
-						<td><img alt="About The Book" class="img-responsive" src="sites/default/files/Final-Cover.jpg" /></td>
-						<td>
-							<p>The Stuff of Dreams&nbsp;is a Science Fiction novel that will speak to Christian men and women who have had their faith challenged by adversity and loss. It will delight Christians whose genre of choice is Science Fiction. And for lovers of Science Fiction it will answer the question: What is God doing in the future to come?</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+<div>
+<table class="table" id="featuredBook">
+	<tbody>
+		<tr>
+			<td><a href="/chapman2/content/stuff-dreams"><img alt="About The Book" class="img-responsive" src="sites/default/files/Final-Cover.jpg" /></a></td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
 
-		<p><a class="btn btn-primary" href="/chapman/node/1">View details »</a></p>
-	</div>
+<div class="col-md-4">
+<h2>Book Audio</h2>
 
-	<div class="col-md-4">
-		<h2>The Beginning</h2>
+<div class="featureContent"><a href="/chapman2/content/demo"><img alt="About The Book" class="img-responsive" src="sites/all/themes/bootstrap_subtheme/img/box.png" /></a> <a class="playOverlay" href="/chapman2/content/demo">&nbsp;</a></div>
+</div>
 
-		<div>
-			<table class="table">
-				<tbody>
-					<tr>
-						<td>
-							<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+<div class="col-md-4">
+<h2>Contact Us</h2>
 
-		<p><a class="btn btn-primary" href="#">View details »</a></p>
-	</div>
-
-	<div class="col-md-4">
-		<h2>Contact Us</h2>
-
-		<div>
-			<table class="table">
-				<tbody>
-					<tr>
-						<td><!-- Text input--><!-- Text input-->
-							<div class="form-group">  
+<div>
+<table class="table">
+	<tbody>
+		<tr>
+			<td><!-- Text input--><!-- Text input-->
+			<div class="form-group">  
   <div class="inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -91,10 +74,10 @@
 
 </fieldset>
 </form>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
 </div>
