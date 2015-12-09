@@ -30,10 +30,19 @@
  .page-bio, .page-book-product, .node-type-product-display, .page-cart {
     background-image: url("../img/jchapman_background2.jpg");
  }
-.page-book-product .row, .node-type-product-display .row, .page-cart .row, .node-type-audio .row {
+.page-book-product .row, .node-type-product-display .row, .page-cart .row  {
 	background-color: #f9f9f9;
 	opacity: 0.9;
 	border-radius:4px;
+}
+
+.node-type-audio .row {
+	background-color: transparent;
+	opacity: 0.9;
+	border-radius:4px;
+	width:100%;
+	margin: 0 auto;
+	position:absolute;
 }
 
 .node-type-product-display #overview {
